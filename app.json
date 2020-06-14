@@ -2,11 +2,7 @@
   "expo": {
     "name": "hack-mobile",
     "slug": "hack-mobile",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,11 +14,17 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.relese.hack"
+    },
+    "android": {
+      "package": "com.relese.hack",
+      "adaptiveIcon": {
+        "backgroundColor": "#222",
+        "foregroundImage": "./assets/icon.png"
+      }
     }
   }
 }
